@@ -1,0 +1,15 @@
+
+relativeURLs: true
+baseURL: 'https://blog.packingpanic.com'
+languageCode: 'en-us'
+title: 'Packing Panic Blog'
+theme: "mini-papa"
+uglyURLs: true
+
+params:
+    about: 'ABOUT'
+    links:
+    - name: Privacy
+      path: /privacy.html
+    - name: Imprint
+      path: https://www.headissue.com/imprint.html
