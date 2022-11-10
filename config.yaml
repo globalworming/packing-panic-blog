@@ -1,15 +1,175 @@
 
-relativeURLs: true
 baseURL: 'https://blog.packingpanic.com'
-languageCode: 'en-us'
-title: 'Packing Panic Blog'
-theme: "mini-papa"
+# languageCode: 'en'
+title: 'Packing Panic - The Blog'
+theme: "PaperMod"
+relativeURLs: true
 uglyURLs: true
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Get In Touch
+                  url: getintouch.html
+                  weight: 1
+                - name: Privacy
+                  url: privacy.html
+                  weight: 5
+                - name: Imprint
+                  url: https://www.headissue.com/imprint.html
+                  weight: 10
+#                - name: Archive
+#                  url: posts/
+#                  weight: 5
+#                - name: Search
+#                  url: search/
+#                  weight: 10
+#                - name: Tags
+#                  url: tags/
+#                  weight: 10
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
 params:
-    about: 'ABOUT'
-    links:
-    - name: Privacy
-      path: /privacy.html
-    - name: Imprint
-      path: https://www.headissue.com/imprint.html
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    author: team Packing Panic
+    # author: ["Me", "You"] # multiple authors
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: false
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    profileMode:
+        enabled: false
+        title: PaperMod
+        imageUrl: "#"
+        imageTitle: my image
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags
+
+    homeInfoParams:
+        Title: "Our Journey"
+        Content: >
+            Packing Panic will be the one stop shop for all your lightweight travel essentials from small toothpaste, 
+            fast drying socks, light backpacks and suitcases. 
+            For 2023 we will start with targetting the European market but hope to expand to other markets.
+            Our home base is in Munich, Germany.
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/packingpanic"
+        - name: Rss
+          url: "index.xml"
+
+    editPost:
+        URL: "https://github.com/packingpanic/blog/tree/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # label:
+    #     text: "Home"
+    #     icon: icon.png
+    #     iconHeight: 35
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+
+    assets:
+        disableHLJS: true
+    #     favicon: "<link / abs url>"
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
+
+    # cover:
+    #     hidden: true # hide everywhere but not in structured data
+    #     hiddenInList: true # hide on list pages and home
+    #     hiddenInSingle: true # hide on single page
+
+    # fuseOpts:
+    #     isCaseSensitive: false
+    #     shouldSort: true
+    #     location: 0
+    #     distance: 1000
+    #     threshold: 0.4
+    #     minMatchCharLength: 0
+    #     keys: ["title", "permalink", "summary", "content"]
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai
+
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
