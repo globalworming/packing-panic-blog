@@ -3,8 +3,10 @@ baseURL: 'https://blog.packingpanic.com'
 # languageCode: 'en'
 title: 'Packing Panic - The Blog'
 theme: "PaperMod"
+copyright: "Copyright 2022 - Packing Panic is a registered trade mark."
+
 relativeURLs: true
-uglyURLs: true
+# uglyURLs: true
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -18,7 +20,7 @@ pygmentsUseClasses: true
 minify:
     disableXML: true
     # minifyOutput: true
-
+    
 languages:
     en:
         languageName: "English"
@@ -30,10 +32,10 @@ languages:
         menu:
             main:
                 - name: Get In Touch
-                  url: getintouch.html
+                  url: getintouch/
                   weight: 1
                 - name: Privacy
-                  url: privacy.html
+                  url: privacy/
                   weight: 5
                 - name: Imprint
                   url: https://www.headissue.com/imprint.html
@@ -57,7 +59,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    description: "Packing Panic Blog - Packing Panic is the one stop shop for lightweight travelers and one bag enthusiasts alike."
     author: team Packing Panic
     # author: ["Me", "You"] # multiple authors
 
@@ -71,7 +73,7 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowRssButtonInSectionTermList: true
-    ShowToc: true
+    ShowToc: false
     # comments: false
     images: ["papermod-cover.png"]
 
@@ -98,6 +100,8 @@ params:
 
     socialIcons:
         - name: twitter
+          url: "https://twitter.com/packingpanic"
+        - name: LinkedIn
           url: "https://twitter.com/packingpanic"
         - name: Rss
           url: "index.xml"
