@@ -1,2 +1,4 @@
 _gen
 .hugo_build.lock
+public
+*~
