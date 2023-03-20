@@ -123,11 +123,11 @@ params:
     assets:
         disableHLJS: true
         # from assets/logo-ball-for-favicon
-        favicon: "/favicon.ico"
+        favicon: "/favicon16x16.ico"
         favicon16x16: "/favicon16x16.png"
         favicon32x32: "/favicon32x32.png"
         apple_touch_icon: "/favicon-appletouch.png"
-        safari_pinned_tab: "/favicon-safari.png"
+        safari_pinned_tab: "/favicon-safari.svg"
 
     # cover:
     #     hidden: true # hide everywhere but not in structured data
