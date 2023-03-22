@@ -1,7 +1,6 @@
 ---
 title: "Onebagging: The Art of Packing Efficiently"
-date: 2023-03-16T09:50:17+07:00
-draft: true
+date: 2023-03-22T09:50:17+07:00
 author: "bayu"
 cover:
     image: "PXL_20221124_031327391.jpg"
