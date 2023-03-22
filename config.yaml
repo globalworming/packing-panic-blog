@@ -32,7 +32,7 @@ languages:
         menu:
             main:
                 - name: Get In Touch
-                  url: getintouch/
+                  url: https://www.packingpanic.com/contact-us
                   weight: 1
                 - name: Privacy
                   url: privacy/
