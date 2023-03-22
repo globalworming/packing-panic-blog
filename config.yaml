@@ -101,8 +101,12 @@ params:
     socialIcons:
         - name: twitter
           url: "https://twitter.com/packingpanic"
+        - name: facebook
+          url: "https://facebook.com/packingpanic"
+        - name: instagram
+          url: "https://instagram.com/packingpanic"
         - name: LinkedIn
-          url: "https://twitter.com/packingpanic"
+          url: "https://www.linkedin.com/company/packingpanic/"
         - name: Rss
           url: "index.xml"
 
