@@ -1,0 +1,12 @@
+{{- $href := .Destination -}}
+{{ $regexpForInternalPages := ".packingpanic.(com|de)|headissue.com" }}
+{{- if and (findRE "://" $href ) ( not (findRE $regexpForInternalPages $href))  }}
+<a href="{{ $href }}?utm_source=blog&utm_medium=blog&utm_campaign={{ .Page.File.Path }}" {{ with .Title }} title="{{ . }}"{{ end }} {{ if strings.HasPrefix $href "http" }} target="_blank"{{ end }}>{{ .Text }}</a> <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                                                                                                                                                                                                                          stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+    <path d="M15 3h6v6"></path>
+    <path d="M10 14L21 3"></path>
+</svg>
+{{- else }}
+<a href="{{ $href }}" {{ with .Title }} title="{{ . }}"{{ end }} {{ if strings.HasPrefix $href "http" }} target="_blank"{{ end }}>{{ .Text }}</a>
+{{- end }}
